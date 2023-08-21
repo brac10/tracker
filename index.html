@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Cesium</title>
+<meta charset="utf-8">
+<!-- Include the CesiumJS JavaScript and CSS files -->
+<script src="https://cesium.com/downloads/cesiumjs/releases/1.108/Build/Cesium/Cesium.js"></script>
+<link href="https://cesium.com/downloads/cesiumjs/releases/1.108/Build/Cesium/Widgets/widgets.css" rel="stylesheet">
+</head>
+<body>
+<div id="cesiumContainer"></div>
+<script type="module"> 
+    // Your access token can be found at: https://ion.cesium.com/tokens.
+    // This is the default access token from your ion account
+    Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJkZDEwOGI4NC0xNjdiLTRhYWUtOGY5NC1mMGZhODQyOTBjYjkiLCJpZCI6MTE1MTMyLCJpYXQiOjE2Njg2NDYzNDR9.mkVcS1O3m9xQRm9Og7RFyJ_ssNGwF8HvV1iBggR-Juk';
+
+    // Initialize the Cesium Viewer in the HTML element with the `cesiumContainer` ID.
+    const viewer = new Cesium.CesiumWidget('cesiumContainer');
+</script>
+</div>
+</body>
+</html>
